@@ -311,6 +311,22 @@ footer { background: var(--navy-dark); padding-top: 0; }
   font-size: 0.9rem; line-height: 1.7;
 }
 .footer-grid ul li { margin-bottom: 0.5rem; }
+.footer-grid a { color: rgba(255,255,255,0.95); text-decoration: none; }
+.footer-grid .contact-link {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 0.75rem;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.95);
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.footer-grid .contact-link:hover {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.3);
+  transform: translateY(-1px);
+}
 .footer-social {
   padding: 2rem 0 1.5rem;
   border-top: 1px solid rgba(255,255,255,0.1);
