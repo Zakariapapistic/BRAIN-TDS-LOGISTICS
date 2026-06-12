@@ -197,6 +197,38 @@ ul { list-style: none; }
   text-align: left;
 }
 
+/* ===== Location Map ===== */
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.location-list {
+  display: grid;
+  gap: 1rem;
+}
+.location-list li {
+  padding: 1rem 1.25rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  box-shadow: var(--shadow-sm);
+  color: var(--text);
+  font-size: 1rem;
+}
+.map-embed {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  min-height: 320px;
+}
+.map-embed iframe {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+}
+
 /* ===== Cards ===== */
 .cards-grid {
   display: grid;
