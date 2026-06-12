@@ -197,6 +197,102 @@ ul { list-style: none; }
   text-align: left;
 }
 
+/* ===== Location Map ===== */
+.location-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(420px, 1.5fr);
+  gap: 2.5rem;
+  align-items: start;
+  justify-content: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.location-column {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+.location-details,
+.map-embed,
+.location-about {
+  width: 100%;
+}
+.location-list {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.location-list li {
+  padding: 1rem 1.25rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  color: var(--text);
+  font-size: 1rem;
+}
+.location-about {
+  padding: 2rem 2.2rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 680px;
+  margin: 0 auto;
+}
+.location-about h3,
+.location-about h4 {
+  color: var(--navy);
+  text-align: center;
+}
+.location-about h3 {
+  margin-bottom: 1rem;
+  font-size: 1.65rem;
+  line-height: 1.1;
+}
+.location-about h4 {
+  margin: 1.6rem 0 0.6rem;
+  font-size: 1.05rem;
+}
+.location-about p {
+  margin-top: 0.85rem;
+  color: var(--text);
+  line-height: 1.85;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.about-list {
+  margin: 1rem auto 0;
+  padding-left: 1.25rem;
+  max-width: 520px;
+  color: var(--text);
+}
+.about-list li {
+  margin-bottom: 0.7rem;
+  line-height: 1.75;
+}
+.map-embed {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  min-height: 340px;
+  width: 100%;
+  max-width: 580px;
+}
+.map-embed iframe {
+  width: 100%;
+  min-height: 340px;
+  border: 0;
+}
+
 /* ===== Cards ===== */
 .cards-grid {
   display: grid;
@@ -385,6 +481,7 @@ footer { background: var(--navy-dark); padding-top: 0; }
   .tracking-form { flex-direction: column; }
   .footer-top-inner .divider { display: none; }
   .footer-grid { grid-template-columns: 1fr; padding: 2rem 1.25rem; gap: 1.5rem; }
+  .location-grid { grid-template-columns: 1fr; }
   .section { padding: 3.5rem 0; }
   .hero { padding: 5rem 1.25rem 3rem; }
   .hero h1 { font-size: 1.75rem; }
