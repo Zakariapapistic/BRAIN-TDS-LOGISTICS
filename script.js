@@ -8,16 +8,18 @@ window.addEventListener('scroll', () => {
 // ===== Mobile hamburger menu =====
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  hamburger.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
-});
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    hamburger.textContent = '☰';
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
   });
-});
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.textContent = '☰';
+    });
+  });
+}
 
 // ===== Animated stat counters =====
 const statValues = document.querySelectorAll('.stat-value[data-target]');
@@ -58,6 +60,7 @@ const statuses = [
 ];
 
 const handleTrack = () => {
+  if (!trackingInput || !trackingResult) return;
   const id = trackingInput.value.trim();
   trackingResult.classList.remove('hidden');
   if (!id) {
@@ -69,7 +72,10 @@ const handleTrack = () => {
   trackingResult.textContent = `📦 ${id.toUpperCase()} — ${status}`;
 };
 
-trackBtn.addEventListener('click', handleTrack);
-trackingInput.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') handleTrack();
-});
+if (trackBtn && trackingInput && trackingResult) {
+  trackBtn.addEventListener('click', handleTrack);
+  trackingInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleTrack();
+  });
+}
+
