@@ -417,6 +417,7 @@ footer { background: var(--navy-dark); padding-top: 0; }
   .tracking-form { flex-direction: column; }
   .footer-top-inner .divider { display: none; }
   .footer-grid { grid-template-columns: 1fr; padding: 2rem 1.25rem; gap: 1.5rem; }
+  .location-grid { grid-template-columns: 1fr; }
   .section { padding: 3.5rem 0; }
   .hero { padding: 5rem 1.25rem 3rem; }
   .hero h1 { font-size: 1.75rem; }
