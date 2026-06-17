@@ -1,3 +1,8 @@
+// ===== Redirect fallback for old custom domain =====
+if (window.location.hostname.toLowerCase().includes('braintdslogistics.com')) {
+  window.location.replace('https://zakariapapistic.github.io/BRAIN-TDS-LOGISTICS/');
+}
+
 // ===== Navbar scroll effect =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
