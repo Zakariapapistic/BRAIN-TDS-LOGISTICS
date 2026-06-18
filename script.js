@@ -1,6 +1,6 @@
 // ===== Redirect fallback for old custom domain =====
 if (window.location.hostname.toLowerCase().includes('braintdslogistics.com')) {
-  window.location.replace('https://zakariapapistic.github.io/BRAIN-TDS-LOGISTICS/');
+  window.location.replace('https://Zackconnect.github.io/BRAIN-TDS-LOGISTICS/');
 }
 
 // ===== Navbar scroll effect =====

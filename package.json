@@ -1,0 +1,13 @@
+{
+  "name": "brain-tds-logistics",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx live-server --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zackconnect/BRAIN-TDS-LOGISTICS.git"
+  },
+  "author": "Zackconnect"
+}
